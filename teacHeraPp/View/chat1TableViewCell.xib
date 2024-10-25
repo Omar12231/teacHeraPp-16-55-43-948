@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="senderCell" rowHeight="113" id="KGk-i7-Jjw" customClass="chat1TableViewCell" customModule="teacHeraPp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="113"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qsk-Kz-JG3">
+                        <rect key="frame" x="92" y="0.0" width="228" height="113"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 18096" translatesAutoresizingMaskIntoConstraints="NO" id="zNt-or-gIP">
+                                <rect key="frame" x="0.0" y="0.0" width="228" height="113"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="...مرحبا" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vov-db-mTh">
+                                <rect key="frame" x="5" y="5" width="218" height="103"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vov-db-mTh" firstAttribute="leading" secondItem="Qsk-Kz-JG3" secondAttribute="leading" constant="5" id="Cdt-Cm-ySC"/>
+                            <constraint firstItem="zNt-or-gIP" firstAttribute="leading" secondItem="Qsk-Kz-JG3" secondAttribute="leading" id="Sl8-X9-UjZ"/>
+                            <constraint firstItem="zNt-or-gIP" firstAttribute="top" secondItem="Qsk-Kz-JG3" secondAttribute="top" id="ULP-Sl-TJg"/>
+                            <constraint firstAttribute="bottom" secondItem="zNt-or-gIP" secondAttribute="bottom" id="cJb-Mp-aTK"/>
+                            <constraint firstAttribute="bottom" secondItem="vov-db-mTh" secondAttribute="bottom" constant="5" id="fOm-8p-R07"/>
+                            <constraint firstAttribute="trailing" secondItem="zNt-or-gIP" secondAttribute="trailing" id="jK3-FP-8bF"/>
+                            <constraint firstAttribute="trailing" secondItem="vov-db-mTh" secondAttribute="trailing" constant="5" id="x5f-ZC-FJK"/>
+                            <constraint firstItem="vov-db-mTh" firstAttribute="top" secondItem="Qsk-Kz-JG3" secondAttribute="top" constant="5" id="y8d-NQ-2Y1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Qsk-Kz-JG3" secondAttribute="bottom" id="1xi-kE-gxA"/>
+                    <constraint firstAttribute="trailing" secondItem="Qsk-Kz-JG3" secondAttribute="trailing" id="5WI-YV-rHd"/>
+                    <constraint firstItem="Qsk-Kz-JG3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="92" id="EQX-CB-hNl"/>
+                    <constraint firstItem="Qsk-Kz-JG3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="IA0-6x-VUR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="senderLbl" destination="vov-db-mTh" id="7AK-jK-XvH"/>
+            </connections>
+            <point key="canvasLocation" x="-119.08396946564885" y="44.014084507042256"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Group 18096" width="273" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

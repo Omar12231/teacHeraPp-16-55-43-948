@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="receCell" id="gTV-IL-0wX" customClass="ReceverCollectionViewCell" customModule="teacHeraPp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="63"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="63"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hTg-wJ-mMA">
+                        <rect key="frame" x="0.0" y="0.0" width="216" height="63"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 18097" translatesAutoresizingMaskIntoConstraints="NO" id="olU-LZ-cv7">
+                                <rect key="frame" x="5" y="5" width="211" height="53"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مرحبا...." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yV-yb-Dxq">
+                                <rect key="frame" x="18" y="14" width="190" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.95294117649999999" green="0.95686274510000002" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="olU-LZ-cv7" firstAttribute="top" secondItem="hTg-wJ-mMA" secondAttribute="top" constant="5" id="9av-LY-0eY"/>
+                            <constraint firstItem="3yV-yb-Dxq" firstAttribute="top" secondItem="hTg-wJ-mMA" secondAttribute="top" constant="14" id="Fxq-o4-n2c"/>
+                            <constraint firstAttribute="bottom" secondItem="olU-LZ-cv7" secondAttribute="bottom" constant="5" id="G55-7q-GXO"/>
+                            <constraint firstItem="3yV-yb-Dxq" firstAttribute="leading" secondItem="hTg-wJ-mMA" secondAttribute="leading" constant="18" id="ISH-xb-d5H"/>
+                            <constraint firstAttribute="trailing" secondItem="olU-LZ-cv7" secondAttribute="trailing" id="PM3-Ur-Jzp"/>
+                            <constraint firstAttribute="trailing" secondItem="3yV-yb-Dxq" secondAttribute="trailing" constant="8" id="QVQ-tH-4Io"/>
+                            <constraint firstAttribute="bottom" secondItem="3yV-yb-Dxq" secondAttribute="bottom" constant="12" id="fMu-dl-Tue"/>
+                            <constraint firstItem="olU-LZ-cv7" firstAttribute="leading" secondItem="hTg-wJ-mMA" secondAttribute="leading" constant="5" id="noq-lS-trY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="hTg-wJ-mMA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="AEn-iI-KwP"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hTg-wJ-mMA" secondAttribute="bottom" id="GhC-wS-DQH"/>
+                <constraint firstItem="hTg-wJ-mMA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bHa-DJ-n6n"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hTg-wJ-mMA" secondAttribute="trailing" constant="80" id="jBX-ra-puc"/>
+            </constraints>
+            <size key="customSize" width="375" height="63"/>
+            <connections>
+                <outlet property="RecevLal" destination="3yV-yb-Dxq" id="Snv-CW-C1H"/>
+            </connections>
+            <point key="canvasLocation" x="229.7709923664122" y="25"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Group 18097" width="211" height="71.333335876464844"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
